@@ -4,12 +4,32 @@
 
 
 #calcContainer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     max-width: 350px;
     min-height: 450px;
     margin: 2rem auto;
     border: 2px solid var(--border);
-    border-radius: 25px
+    
+}
+
+#buttonContainer {
+    flex-wrap: wrap;
+    max-width: 350px;
+    min-height: 375px;
+    border: 2px solid var(--border);
+}
+
+.Buttons {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 2.3rem;
+    background-color: rgb(187, 187, 187);
+    color: #222;
+    justify-content: center;
+    border: 2px solid var(--border);
 }
 
 h2 {
