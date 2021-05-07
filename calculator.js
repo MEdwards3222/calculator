@@ -1,42 +1,39 @@
 let operator;
 
 function add(num1, num2) {
-    result = num1 + num2;
-    return result;
+    return num1 + num2;
+    
 };
 
 function subtract(num1, num2) {
-    result = num1 - num2;
-    return result;
+    return num1 - num2;
 };
 
 function multiply(num1, num2) {
-    result = num1 * num2;
-    return result;
+    return num1 * num2;
 };
 
 function divide(num1, num2) {
-    result = num1 / num2;
-    return result;
+    return num1 / num2;
 };
 
 function operate(operator, num1, num2) {
 
     switch(operator){
         case "Sum":
-            add(num1, num2);
+            return add(num1, num2);
             break;
         
         case "Diff":
-            subtract(num1, num2);
+            return subtract(num1, num2);
             break;
 
         case "Prod":
-            multiply(num1, num2);
+            return multiply(num1, num2);
             break;
         
         case "Div":
-            divide(num1, num2);
+            return divide(num1, num2);
             break;
     };
 
@@ -55,5 +52,14 @@ function roundNum() {
 };
 
 function displayValue() {
-    
+
+}
+
+
+module.exports = {
+    add,
+    subtract,
+    multiply,
+    divide,
+    operate,
 }
