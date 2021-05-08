@@ -1,5 +1,7 @@
 :root {
     --border: #222;
+    --displayBackground: rgb(185, 185, 185); 
+    --buttonBackground: rgb(138, 138, 138);
 }
 
 
@@ -7,28 +9,37 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    max-width: 350px;
-    min-height: 450px;
+    max-width: 330px;
+    min-height: 390px;
     margin: 2rem auto;
     border: 2px solid var(--border);
     
 }
 
 #buttonContainer {
-    flex-wrap: wrap;
+    display: flex;
     max-width: 350px;
-    min-height: 375px;
+    min-height: 340px;
     border: 2px solid var(--border);
+}
+
+#display {
+    display: flex;
+    background-color: var(--displayBackground);
+    min-height: 40px;
+    font-size: 60px;
+    justify-content: flex-end;
 }
 
 .Buttons {
     display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    padding: 2.3rem;
-    background-color: rgb(187, 187, 187);
+    max-width: 5px;
+    min-height: 5px;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin:auto;
+    background-color: var(--buttonBackground);
     color: #222;
-    justify-content: center;
     border: 2px solid var(--border);
 }
 
