@@ -1,8 +1,9 @@
 :root {
-    --border: #222;
+    --border: rgb(163, 163, 163);
     --displayBackground: rgb(185, 185, 185); 
-    --buttonBackground: rgb(138, 138, 138);
-    --calcBackground: rgb(236, 236, 236);
+    --buttonBackground: rgb(214, 214, 214);
+    --calcBackground: rgb(247, 247, 247);
+    --displayBorder: rgb(163, 163, 163);
 }
 
 
@@ -11,8 +12,9 @@
     flex-wrap: wrap;
     border: 2px solid var(--border);
     background-color: var(--calcBackground);
-    width: 350px;
+    width: 310px;
     margin: auto;
+    font-family: 'Roboto', sans-serif;
     
 }
 
@@ -21,20 +23,30 @@
     max-width: 400px;
     flex-wrap: wrap;
     
+    
 }
 
 #display {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    height: 60px;
+    height: 70px;
     font-size: 60px;
-    
+    border-bottom: 2px solid var(--displayBorder);
     
 }
 
-.Buttons {
-    
+#Buttons {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 20%;
+    border: none;
+    padding: 20px;
+    background-color: var(--buttonBackground);
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
