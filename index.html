@@ -13,20 +13,22 @@
         <div id="calcContainer" class="calculator"> 
             <div id="display">0</div>
             <div id="buttonContainer" class="buttonContainer">
-                <button id="Buttons" class="numButton"> 7</button>
-                <button id="Buttons" class="numButton"> 8</button>
-                <button id="Buttons" class="numButton"> 9</button>
+                <!-- For num buttons, numbers correspond with their ASCII counterparts. I.E 1 = 049
+                This is to help facilitate DRY methodology when hooking up Javascript-->
+                <button id="Buttons" class="055Button"> 7</button>
+                <button id="Buttons" class="056Button"> 8</button>
+                <button id="Buttons" class="057Button"> 9</button>
                 <button id="Buttons" class="divisionButton"> /</button>
-                <button id="Buttons" class="numButton"> 4</button>
-                <button id="Buttons" class="numButton"> 5</button>
-                <button id="Buttons" class="numButton"> 6</button>
+                <button id="Buttons" class="052Button"> 4</button>
+                <button id="Buttons" class="053Button"> 5</button>
+                <button id="Buttons" class="054Button"> 6</button>
                 <button id="Buttons" class="multiplicationButton"> X</button>
-                <button id="Buttons" class="numButton"> 1</button>
-                <button id="Buttons" class="numButton"> 2</button>
-                <button id="Buttons" class="numButton"> 3</button>
+                <button id="Buttons" class="049Button"> 1</button>
+                <button id="Buttons" class="050Button"> 2</button>
+                <button id="Buttons" class="051Button"> 3</button>
                 <button id="Buttons" class="subtractionButton"> -</button>
                 <button id="Buttons" class="decimalButton"> .</button>
-                <button id="Buttons" class="numButton"> 0</button>
+                <button id="Buttons" class="048Button"> 0</button>
                 <button id="Buttons" class="executeButton"> =</button>
                 <button id="Buttons" class="additionButton"> +</button>
                 <button id="Buttons" class="clearButton"> Clear</button>

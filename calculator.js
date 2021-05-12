@@ -2,6 +2,9 @@ let operator;
 let calcContainer = document.querySelector('#calcContainer');
 let calcDisplay = document.querySelector('#display');
 let displayTotal = 0; //use calcDisplay.textContent to manipulate calc display
+let btn = document.querySelector('#Buttons');
+
+
 
 function add(num1, num2) {
     return num1 + num2;
@@ -42,7 +45,7 @@ function operate(operator, num1, num2) {
 };
 
 function clear() {
-
+    calcDisplay.textContent = 0;
 };
 
 function backspace() {
@@ -53,7 +56,8 @@ function roundNum() {
 
 };
 
-function displayValue() {
+function displayValue(result) {
+    calcDisplay.textContent = result;
 
 }
 
