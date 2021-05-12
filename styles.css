@@ -38,31 +38,31 @@
     border-bottom: 2px solid var(--displayBorder);
     
 }
-#Buttons.divisionButton {
+#divisionButton {
     background-color: var(--operatorBackground);
 }
 
-#Buttons.multiplicationButton {
+#multiplicationButton {
     background-color: var(--operatorBackground);
 }
 
-#Buttons.subtractionButton {
+#subtractionButton {
     background-color: var(--operatorBackground);
 }
 
-#Buttons.additionButton {
+#additionButton {
     background-color: var(--operatorBackground);
 }
 
-#Buttons.clearButton {
+#clearButton {
     background-color: var(--clearBackground);
 }
 
-#Buttons.eraseButton {
+#eraseButton {
     background-color: var(--EraseBackground);
 }
 
-#Buttons {
+.Buttons {
     display: flex;
     flex-grow: 1;
     flex-basis: 20%;
