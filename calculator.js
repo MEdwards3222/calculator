@@ -1,8 +1,10 @@
 let operator;
+let calcContainer = document.querySelector('#calcContainer');
+let calcDisplay = document.querySelector('#display');
+let displayTotal = 0; //use calcDisplay.textContent to manipulate calc display
 
 function add(num1, num2) {
     return num1 + num2;
-    
 };
 
 function subtract(num1, num2) {
@@ -54,6 +56,7 @@ function roundNum() {
 function displayValue() {
 
 }
+
 
 
 module.exports = {
