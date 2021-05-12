@@ -4,6 +4,9 @@
     --buttonBackground: rgb(214, 214, 214);
     --calcBackground: rgb(247, 247, 247);
     --displayBorder: rgb(163, 163, 163);
+    --operatorBackground: rgb(192, 230, 236);
+    --clearBackground: rgb(231, 185, 185);
+    --EraseBackground: rgb(198, 241, 163);
 }
 
 
@@ -35,6 +38,29 @@
     border-bottom: 2px solid var(--displayBorder);
     
 }
+#Buttons.divisionButton {
+    background-color: var(--operatorBackground);
+}
+
+#Buttons.multiplicationButton {
+    background-color: var(--operatorBackground);
+}
+
+#Buttons.subtractionButton {
+    background-color: var(--operatorBackground);
+}
+
+#Buttons.additionButton {
+    background-color: var(--operatorBackground);
+}
+
+#Buttons.clearButton {
+    background-color: var(--clearBackground);
+}
+
+#Buttons.eraseButton {
+    background-color: var(--EraseBackground);
+}
 
 #Buttons {
     display: flex;
@@ -48,6 +74,8 @@
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
 }
+
+
 
 h2 {
     text-align: center;
