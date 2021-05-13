@@ -1,12 +1,16 @@
 :root {
     --border: rgb(163, 163, 163);
     --displayBackground: rgb(185, 185, 185); 
-    --buttonBackground: rgb(214, 214, 214);
+    --buttonBackground: rgba(214, 214, 214);
+    --buttonBackgroundHover: rgba(201, 200, 200);
     --calcBackground: rgb(247, 247, 247);
     --displayBorder: rgb(163, 163, 163);
     --operatorBackground: rgb(192, 230, 236);
+    --operatorBackgroundHover: rgb(181, 217, 223);
     --clearBackground: rgb(231, 185, 185);
+    --clearBackgroundHover: rgb(206, 166, 166);
     --EraseBackground: rgb(198, 241, 163);
+    --EraseBackgroundHover: rgb(178, 216, 147);
 }
 
 
@@ -42,24 +46,48 @@
     background-color: var(--operatorBackground);
 }
 
+#divisionButton:hover {
+    background-color: var(--operatorBackgroundHover);
+}
+
 #multiplicationButton {
     background-color: var(--operatorBackground);
+}
+
+#multiplicationButton:hover {
+    background-color: var(--operatorBackgroundHover);
 }
 
 #subtractionButton {
     background-color: var(--operatorBackground);
 }
 
+#subtractionButton:hover {
+    background-color: var(--operatorBackgroundHover);
+}
+
 #additionButton {
     background-color: var(--operatorBackground);
+}
+
+#additionButton:hover {
+    background-color: var(--operatorBackgroundHover);
 }
 
 #clearButton {
     background-color: var(--clearBackground);
 }
 
+#clearButton:hover {
+    background-color: var(--clearBackgroundHover);
+}
+
 #eraseButton {
     background-color: var(--EraseBackground);
+}
+
+#eraseButton:hover {
+    background-color: var(--EraseBackgroundHover);
 }
 
 .Buttons {
@@ -73,6 +101,11 @@
     justify-content: center;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
+    transition-duration: 0.1s;
+}
+
+.Buttons:hover {
+    background-color: var(--buttonBackgroundHover);
 }
 
 

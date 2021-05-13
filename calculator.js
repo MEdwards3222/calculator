@@ -1,9 +1,9 @@
 let operator;
-let calcContainer = document.querySelector('#calcContainer');
+let calcContainer = document.querySelector('.calculator');
 let calcDisplay = document.querySelector('#display');
 let displayTotal = 0; //use calcDisplay.textContent to manipulate calc display
-let btn = document.querySelector('#Buttons');
-
+let btn = document.querySelector('.Buttons');
+let zeroBtn = document.getElementById('055Button');
 
 
 function add(num1, num2) {
