@@ -1,7 +1,8 @@
-let operator;
 let calcContainer = document.querySelector('.calculator');
 let calcDisplay = document.querySelector('#display');
 let displayTotal = " "; //use calcDisplay.textContent to manipulate calc display
+let runningTotal = 0;
+let operator = " ";
 let btn = document.querySelector('.Buttons');
 
 let zeroBtn = document.getElementById('048Button');
@@ -16,6 +17,7 @@ let eightBtn = document.getElementById('056Button');
 let nineBtn = document.getElementById('057Button');
 let clearBtn = document.getElementById('clearButton');
 let eraseBtn = document.getElementById('eraseButton');
+let addBtn = document.getElementById('additionButton');
 
 
 function add(num1, num2) {
@@ -127,6 +129,15 @@ nineBtn.addEventListener("click", function () {
 
 zeroBtn.addEventListener("click", function () {
     displayTotal += "0";
+    calcDisplay.textContent = displayTotal;
+});
+
+
+addBtn.addEventListener("click", function () {
+    let parsedTotal = parseInt(displayTotal, 10);
+    operator = "Sum";
+    runningTotal = operate(operator, runningTotal, parsedTotal);
+    displayTotal = runningTotal;
     calcDisplay.textContent = displayTotal;
 });
 
